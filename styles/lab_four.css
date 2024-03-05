@@ -14,14 +14,33 @@ section {
     margin: 0 auto;
 }
 
+/*HERO SECTION*/
 
 .hero-container {
   background-color: #800015;
   color: #fff;
   height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
 }
 
+.hero-text {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+}
 
+.hero-image {
+
+}
+
+/*
 .content-container {
   background-color: #8c9e70;
   color: #fff;
