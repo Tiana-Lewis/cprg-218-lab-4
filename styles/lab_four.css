@@ -30,12 +30,12 @@
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 6vw;
     margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 3.5vw;
     margin-bottom: 1.5rem;
 }
 
@@ -130,6 +130,7 @@ h2 {
     margin-top: 10%;
     margin-right: 10%;
     padding-bottom: 10%;
+    padding-left: 10%;
 }
 
 .footer-row1 {
@@ -148,4 +149,8 @@ li {
 .pink-link {
     color: #ffb6b6;
     text-decoration: none;
+}
+
+h4, p, li {
+    font-size: 2.5vw;
 }
