@@ -94,7 +94,7 @@ h2 {
 }
 
 .active, .accordion:hover {
-    background-color: #ffeded;
+    background-color: #ffb6b6;
   }
 
 /* FOOTER SECTION */
@@ -134,4 +134,18 @@ h2 {
 
 .footer-row1 {
     flex: 1;
+}
+
+li {
+    list-style: none;
+    color:#ffffff;
+}
+
+.pink-link:hover {
+    color: white;
+}
+
+.pink-link {
+    color: #ffb6b6;
+    text-decoration: none;
 }
