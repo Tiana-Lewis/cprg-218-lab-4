@@ -6,6 +6,7 @@
 
 /* HERO SECTION */
 .hero-container {
+    background-color: #85755d;
     position: relative;
     height: 100vh;
     display: flex;
@@ -40,6 +41,7 @@ h2 {
 
 /* CONTENT SECTION */
 .content-container {
+    background-color: #85755d;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -73,15 +75,15 @@ h2 {
 
 /* ACCORDION SECTION */
 .accordion-container {
-    background-color: #fc7753;
+    background-color: #85755d;
     color: #fff;
     padding: 2rem;
     text-align: center;
 }
 
 .accordion {
-    background-color: #ffcbcb;
-    color: #000000;
+    background-color: #ffa6a6;
+    color: #ffffff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -97,11 +99,12 @@ h2 {
 
 /* FOOTER SECTION */
 .footer-container {
-    background-color: aqua;
+    background-color: #675c4c;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#fff;
 }
 
 .footer-text {
