@@ -1,17 +1,8 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif, monospace;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: uppercase;
-
-section {
-    padding: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 /*HERO SECTION*/
@@ -30,14 +21,64 @@ section {
   justify-content: center;
 }
 
+.hero-image {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height: 500px;
+width: 1600px;
+}
+
 .hero-text {
     font-size: 1.4rem;
     text-align: center;
     color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.hero-image {
+h1 {
+    font-size: 4rem;
+}
 
+.hero-btn {
+    display: inline-block;
+    color: black;
+    background-color: #800015;
+    text-align: center;
+}
+
+.hero-btn:hover {
+color: #fff;
+background-color: black;
+transition: ease-in-out 0.3s;
+
+}
+
+/*CONTENT SECTION*/
+
+.content {
+    background-color: black;
+    text-align: right;
+}
+
+h2,
+p {
+    padding: 1rem 0;
+}
+
+.containter {
+    width: 60%;
+    margin: auto;
+}
+
+.footer
+{
+    background-color: aqua;
+    text-align: center;
 }
 
 /*
