@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+::-moz-selection {
+    color: rgb(255, 84, 135);
+    background: rgb(255, 255, 255);
+  }
+  
+  ::selection {
+    color: rgb(255, 84, 135);
+    background: rgb(255, 255, 255);
+  }
+
 /*FONTS*/
 h1 {
     font-family: "Limelight", sans-serif;
@@ -60,16 +71,6 @@ body, html {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-}
-
-h1 {
-    font-size: 4vw;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 2vw;
-    margin-bottom: 1.5rem;
 }
 
 /* CONTENT SECTION */
@@ -166,18 +167,18 @@ h2 {
     background-color: #675c4c;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    color:#fff;
+    color: #fff;
+    justify-content: space-between;
+
 }
 
-.footer-text {
-    flex: 1;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer-item {
+    flex-basis: 30%;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .map {
@@ -188,19 +189,16 @@ h2 {
     height: 100%;
 }
 
-.map iframe {
-    width: 100%;
+ul {
     height: 100%;
-    margin-top: 10%;
-    margin-right: 10%;
-    padding-bottom: 5%;
-    padding-left: 10%;
+}
+.copy {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
-.footer-row1 {
-    flex: 1;
-}
-
+/*LINK STYLES*/
 li {
     list-style: none;
     color:#ffffff;
