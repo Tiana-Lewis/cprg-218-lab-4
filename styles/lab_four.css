@@ -3,6 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*FONTS*/
+h1 {
+    font-family: "Limelight", sans-serif;
+}
+
+h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+p, li, summary {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
 
 /* HERO SECTION */
 .hero-container {
@@ -30,30 +62,78 @@
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 4vw;
     margin-bottom: 1rem;
 }
 
 h2 {
+    font-size: 2vw;
     margin-bottom: 1.5rem;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+    h2 {
+        font-size: 2.5vw;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    h1 {
+        font-size: 3.8vw;
+    }
+    h2 {
+        font-size: 1.9vw;
 }
 
 /* CONTENT SECTION */
 .content-container {
     background-color: #85755d;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     width: 100%;
 }
 
-.content-text {
-    flex: 1;
+.content-container2 {
+    display: flex;
+    flex-direction: column;
     max-width: 50%;
+}
+
+.content-text {
+    text-align: center;
     color: #fff;
     padding: 0 2rem;
+}
+
+.content-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.content-btn {
+    background-color: #ffa6a6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.content-btn:hover {
+    background-color: #ffb6b6
 }
 
 .content-image {
@@ -93,6 +173,7 @@ h2 {
     outline: none;
     transition: 0.4s;
     margin-bottom: 2%;
+    border-radius: 4px;
 }
 
 .active, .accordion:hover {
