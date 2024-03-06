@@ -30,12 +30,11 @@
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 60px;
     margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 3.5vw;
     margin-bottom: 1.5rem;
 }
 
@@ -63,6 +62,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .content-image img {
@@ -71,6 +71,7 @@ h2 {
     object-fit: contain; 
     width: auto;
     height: auto;
+    margin-top: 20%;
 }
 
 /* ACCORDION SECTION */
@@ -91,6 +92,7 @@ h2 {
     border: none;
     outline: none;
     transition: 0.4s;
+    margin-bottom: 2%;
 }
 
 .active, .accordion:hover {
@@ -129,7 +131,7 @@ h2 {
     height: 100%;
     margin-top: 10%;
     margin-right: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     padding-left: 10%;
 }
 
@@ -140,6 +142,12 @@ h2 {
 li {
     list-style: none;
     color:#ffffff;
+    color: #ffb6b6;
+    text-decoration: none;
+}
+
+li:hover {
+    color: white;
 }
 
 .pink-link:hover {
@@ -149,8 +157,4 @@ li {
 .pink-link {
     color: #ffb6b6;
     text-decoration: none;
-}
-
-h4, p, li {
-    font-size: 2.5vw;
 }
