@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-::-moz-selection {
-    color: rgb(255, 84, 135);
-    background: rgb(255, 255, 255);
-  }
-  
   ::selection {
     color: rgb(255, 84, 135);
     background: rgb(255, 255, 255);
@@ -21,7 +15,7 @@ h1 {
     padding: 30px;
 }
 
-h2, h3 {
+h2, h3, h4, h5 {
     font-family: "Poppins", sans-serif;
 }
 
@@ -139,6 +133,7 @@ body, html {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+    transition: 0.4s;
 }
 
 .content-btn:hover {
@@ -146,6 +141,11 @@ body, html {
 }
 
 /* ACCORDION SECTION */
+.accordion-h2 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
 .accordion-container {
     background-color: #85755d;
     color: #fff;
