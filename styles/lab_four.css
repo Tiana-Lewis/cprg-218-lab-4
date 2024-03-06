@@ -80,19 +80,43 @@ body, html {
     justify-content: center;
     padding: 2rem;
     margin-bottom: 5rem;
+    margin-top: 5rem;
     width: 100%;
+    flex-wrap: wrap;
 }
 
-.content-container2 {
+.content {
     display: flex;
     flex-direction: column;
     max-width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content-text {
     text-align: center;
     color: #fff;
-    padding: 0 2rem;
+    
+}
+
+.content-image {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding-right: 5%;
+    
+
+}
+
+.content-image img {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain; 
+    width: auto;
+    height: auto;
+    margin-top: 20%;
 }
 
 .content-btn-container {
@@ -119,24 +143,6 @@ body, html {
     background-color: #ffb6b6
 }
 
-.content-image {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.content-image img {
-    max-width: 100%;
-    max-height: 100%; 
-    object-fit: contain; 
-    width: auto;
-    height: auto;
-    margin-top: 20%;
-}
-
 /* ACCORDION SECTION */
 .accordion-container {
     background-color: #85755d;
@@ -144,8 +150,6 @@ body, html {
     padding: 2rem;
     text-align: center;
     margin-bottom: 4rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
 }
 
 .accordion {
@@ -177,12 +181,11 @@ body, html {
     color: #fff;
     justify-content: space-between;
     padding-top: 4rem;
-
 }
 
 .footer-item {
     flex-basis: 30%;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
@@ -192,7 +195,16 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100%;
+    overflow: hidden;
 }
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 ul {
     height: 100%;
