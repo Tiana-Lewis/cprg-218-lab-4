@@ -17,6 +17,8 @@
 /*FONTS*/
 h1 {
     font-family: "Limelight", sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 30px;
 }
 
 h2, h3 {
