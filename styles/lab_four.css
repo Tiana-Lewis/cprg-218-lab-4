@@ -218,13 +218,13 @@ body, html {
     flex-direction: row;
     align-items: center;
     color: #fff;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 4rem;
 }
 
 .footer-item {
-    flex-basis: 30%;
-    padding: 15px;
+    flex-basis: 25%;
+    padding: 2.5px;
     margin-bottom: 20px;
     justify-content: center;
 }
@@ -232,6 +232,7 @@ body, html {
 .map {
     height: 0%;
     overflow: hidden;
+    max-width: 600;
     aspect-ratio: 16 / 9;
 }
 
@@ -252,7 +253,7 @@ ul {
     padding: 20px;
 }
 
-
+/*BREAKPOINTS*/
 /*mobile*/
 @media screen and (max-width: 768px) {
     .footer-item {
@@ -261,7 +262,7 @@ ul {
 
     .map {
         flex-basis: 80%;
-        max-width: 300px;
+        max-width: 400px;
         aspect-ratio: 16 / 9;
     }
 }
@@ -269,12 +270,12 @@ ul {
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .footer-item {
-        flex-basis: 50%; /* Adjust as needed */
+        flex-basis: 50%;
     }
 
     .map {
-        flex-basis: 50%; /* Adjust as needed */
-        max-width: 500px; /* Adjust as needed */
+        flex-basis: 50%;
+        max-width: 500px;
         aspect-ratio: 16 / 9;
     }
 }
