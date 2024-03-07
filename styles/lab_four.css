@@ -215,9 +215,6 @@ body, html {
 }
 
 .map {
-    flex: 1;
-    display: flex;
-    align-items: center;
     height: 0%;
     overflow: hidden;
     aspect-ratio: 16 / 9;
@@ -240,6 +237,8 @@ ul {
     padding: 20px;
 }
 
+
+/*mobile*/
 @media screen and (max-width: 768px) {
     .footer-item {
         flex-basis: 100%;
@@ -248,9 +247,23 @@ ul {
     .map {
         flex-basis: 80%;
         max-width: 300px;
-        aspect-ratio: unset;
+        aspect-ratio: 16 / 9;
     }
 }
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-item {
+        flex-basis: 50%; /* Adjust as needed */
+    }
+
+    .map {
+        flex-basis: 50%; /* Adjust as needed */
+        max-width: 500px; /* Adjust as needed */
+        aspect-ratio: 16 / 9;
+    }
+}
+
 /*LINK STYLES*/
 li {
     list-style: none;
