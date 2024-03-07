@@ -50,27 +50,42 @@ p, li, summary {
 /* HERO SECTION */
 body, html {
     height: 100%;
+    width: 100%;
     margin: 0;
+    padding: 0;
     background-color: #85755d;
   }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.hero-container {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
 }
 
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image covers the entire container */
+}
 
 .hero-text {
+    text-align: center;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+
 }
 
 /* CONTENT SECTION */
