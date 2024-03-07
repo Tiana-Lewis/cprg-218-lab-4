@@ -53,25 +53,45 @@
 
   <!-- ACCORDIAN -->
   <section class="container accordion-container">
+    <h2 class="accordion-h2">Flower Favorites</h2>
+  
+    <div class="accordion-wrapper">
+      <button class="accordion-button">Roses</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
+      </div>
+      
+      <button class="accordion-button">Dahlias</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
+      </div>
+      
+      <button class="accordion-button">Carnations</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
+      </div>
 
-    <div class="accordion">
-      <h2>Our Flower Specialties</h2>
-      <details>
-        <summary>Roses</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident sunt maiores, perferendis modi cum ipsa dolorum ducimus maxime ullam labore at possimus esse, harum aspernatur perspiciatis.</p>
-      </details>
-      <details>
-        <summary>Crysanthymum</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident sunt maiores, perferendis modi cum ipsa dolorum ducimus maxime ullam labore at possimus esse, harum aspernatur perspiciatis.</p>
-      </details>
-      <details>
-        <summary>Daffodils</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident sunt maiores, perferendis modi cum ipsa dolorum ducimus maxime ullam labore at possimus esse, harum aspernatur perspiciatis.</p>
-      </details>
-      <details>
-        <summary>Tiger Lillies</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident sunt maiores, perferendis modi cum ipsa dolorum ducimus maxime ullam labore at possimus esse, harum aspernatur perspiciatis.</p>
-      </details>
+      <button class="accordion-button">Tiger Lilies</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque cum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
+      </div>
+      
+      <script>
+  var acc = document.querySelectorAll(".accordion-button");
+
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+      </script>
+
         </div>
   </section>
 
